@@ -40,11 +40,11 @@ export class UserComponent {
 		}
 	}
 
-	addHobby(hobby){
+	addHobby(hobby: string){
 		this.hobbies.push(hobby);
 	}
 
-	deleteHobby(index){
+	deleteHobby(index: number){
 		this.hobbies.splice(index, 1);
 	}
 
@@ -56,7 +56,7 @@ interface address {
 	state: string;
 }
 
-interface Post {
+interface post {
 	id: number;
 	title: string;
 	body: string;
